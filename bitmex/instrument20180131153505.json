@@ -1,0 +1,3617 @@
+{
+    "Data": [
+        {
+            "info": "Welcome to the BitMEX Realtime API.",
+            "version": "1.2.0",
+            "timestamp": "2018-01-31T07:35:07.486Z",
+            "docs": "https://www.bitmex.com/app/wsAPI",
+            "limit": {
+                "remaining": 39
+            }
+        },
+        {
+            "success": true,
+            "subscribe": "instrument:XBTUSD",
+            "request": {
+                "op": "subscribe",
+                "args": "instrument:XBTUSD"
+            }
+        },
+        {
+            "table": "instrument",
+            "keys": [
+                "symbol"
+            ],
+            "types": {
+                "symbol": "symbol",
+                "rootSymbol": "symbol",
+                "state": "symbol",
+                "typ": "symbol",
+                "listing": "timestamp",
+                "front": "timestamp",
+                "expiry": "timestamp",
+                "settle": "timestamp",
+                "relistInterval": "timespan",
+                "inverseLeg": "symbol",
+                "sellLeg": "symbol",
+                "buyLeg": "symbol",
+                "positionCurrency": "symbol",
+                "underlying": "symbol",
+                "quoteCurrency": "symbol",
+                "underlyingSymbol": "symbol",
+                "reference": "symbol",
+                "referenceSymbol": "symbol",
+                "calcInterval": "timespan",
+                "publishInterval": "timespan",
+                "publishTime": "timespan",
+                "maxOrderQty": "long",
+                "maxPrice": "float",
+                "lotSize": "long",
+                "tickSize": "float",
+                "multiplier": "long",
+                "settlCurrency": "symbol",
+                "underlyingToPositionMultiplier": "long",
+                "underlyingToSettleMultiplier": "long",
+                "quoteToSettleMultiplier": "long",
+                "isQuanto": "boolean",
+                "isInverse": "boolean",
+                "initMargin": "float",
+                "maintMargin": "float",
+                "riskLimit": "long",
+                "riskStep": "long",
+                "limit": "float",
+                "capped": "boolean",
+                "taxed": "boolean",
+                "deleverage": "boolean",
+                "makerFee": "float",
+                "takerFee": "float",
+                "settlementFee": "float",
+                "insuranceFee": "float",
+                "fundingBaseSymbol": "symbol",
+                "fundingQuoteSymbol": "symbol",
+                "fundingPremiumSymbol": "symbol",
+                "fundingTimestamp": "timestamp",
+                "fundingInterval": "timespan",
+                "fundingRate": "float",
+                "indicativeFundingRate": "float",
+                "rebalanceTimestamp": "timestamp",
+                "rebalanceInterval": "timespan",
+                "openingTimestamp": "timestamp",
+                "closingTimestamp": "timestamp",
+                "sessionInterval": "timespan",
+                "prevClosePrice": "float",
+                "limitDownPrice": "float",
+                "limitUpPrice": "float",
+                "bankruptLimitDownPrice": "float",
+                "bankruptLimitUpPrice": "float",
+                "prevTotalVolume": "long",
+                "totalVolume": "long",
+                "volume": "long",
+                "volume24h": "long",
+                "prevTotalTurnover": "long",
+                "totalTurnover": "long",
+                "turnover": "long",
+                "turnover24h": "long",
+                "prevPrice24h": "float",
+                "vwap": "float",
+                "highPrice": "float",
+                "lowPrice": "float",
+                "lastPrice": "float",
+                "lastPriceProtected": "float",
+                "lastTickDirection": "symbol",
+                "lastChangePcnt": "float",
+                "bidPrice": "float",
+                "midPrice": "float",
+                "askPrice": "float",
+                "impactBidPrice": "float",
+                "impactMidPrice": "float",
+                "impactAskPrice": "float",
+                "hasLiquidity": "boolean",
+                "openInterest": "long",
+                "openValue": "long",
+                "fairMethod": "symbol",
+                "fairBasisRate": "float",
+                "fairBasis": "float",
+                "fairPrice": "float",
+                "markMethod": "symbol",
+                "markPrice": "float",
+                "indicativeTaxRate": "float",
+                "indicativeSettlePrice": "float",
+                "settledPrice": "float",
+                "timestamp": "timestamp"
+            },
+            "foreignKeys": {
+                "inverseLeg": "instrument",
+                "sellLeg": "instrument",
+                "buyLeg": "instrument"
+            },
+            "attributes": {},
+            "action": "partial",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "rootSymbol": "XBT",
+                    "state": "Open",
+                    "typ": "FFWCSX",
+                    "listing": "2016-05-13T12:00:00.000Z",
+                    "front": "2016-05-13T12:00:00.000Z",
+                    "expiry": null,
+                    "settle": null,
+                    "relistInterval": null,
+                    "inverseLeg": "",
+                    "sellLeg": "",
+                    "buyLeg": "",
+                    "positionCurrency": "USD",
+                    "underlying": "XBT",
+                    "quoteCurrency": "USD",
+                    "underlyingSymbol": "XBT=",
+                    "reference": "BMEX",
+                    "referenceSymbol": ".BXBT",
+                    "calcInterval": null,
+                    "publishInterval": null,
+                    "publishTime": null,
+                    "maxOrderQty": 10000000,
+                    "maxPrice": 1000000,
+                    "lotSize": 1,
+                    "tickSize": 0.5,
+                    "multiplier": -100000000,
+                    "settlCurrency": "XBt",
+                    "underlyingToPositionMultiplier": null,
+                    "underlyingToSettleMultiplier": -100000000,
+                    "quoteToSettleMultiplier": null,
+                    "isQuanto": false,
+                    "isInverse": true,
+                    "initMargin": 0.01,
+                    "maintMargin": 0.005,
+                    "riskLimit": 20000000000,
+                    "riskStep": 10000000000,
+                    "limit": null,
+                    "capped": false,
+                    "taxed": true,
+                    "deleverage": true,
+                    "makerFee": -0.00025,
+                    "takerFee": 0.00075,
+                    "settlementFee": 0,
+                    "insuranceFee": 0,
+                    "fundingBaseSymbol": ".XBTBON8H",
+                    "fundingQuoteSymbol": ".USDBON8H",
+                    "fundingPremiumSymbol": ".XBTUSDPI8H",
+                    "fundingTimestamp": "2018-01-31T12:00:00.000Z",
+                    "fundingInterval": "2000-01-01T08:00:00.000Z",
+                    "fundingRate": -0.002273,
+                    "indicativeFundingRate": -0.000951,
+                    "rebalanceTimestamp": null,
+                    "rebalanceInterval": null,
+                    "openingTimestamp": "2018-01-31T06:00:00.000Z",
+                    "closingTimestamp": "2018-01-31T08:00:00.000Z",
+                    "sessionInterval": "2000-01-01T02:00:00.000Z",
+                    "prevClosePrice": 10916.5,
+                    "limitDownPrice": null,
+                    "limitUpPrice": null,
+                    "bankruptLimitDownPrice": null,
+                    "bankruptLimitUpPrice": null,
+                    "prevTotalVolume": 176744709344,
+                    "totalVolume": 176814183529,
+                    "volume": 69474185,
+                    "volume24h": 1756695364,
+                    "prevTotalTurnover": 2706925779080321,
+                    "totalTurnover": 2707620096465237,
+                    "turnover": 694317384916,
+                    "turnover24h": 17319772882026,
+                    "prevPrice24h": 10960,
+                    "vwap": 10143.0165,
+                    "highPrice": 11070,
+                    "lowPrice": 9500,
+                    "lastPrice": 10060.5,
+                    "lastPriceProtected": 10060.5,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0821,
+                    "bidPrice": 10060.5,
+                    "midPrice": 10061,
+                    "askPrice": 10061.5,
+                    "impactBidPrice": 10059.3502,
+                    "impactMidPrice": 10064.5,
+                    "impactAskPrice": 10069.4794,
+                    "hasLiquidity": true,
+                    "openInterest": 237397533,
+                    "openValue": 2357594900223,
+                    "fairMethod": "FundingRate",
+                    "fairBasisRate": -2.4889349999999997,
+                    "fairBasis": -12.65,
+                    "fairPrice": 10069.5,
+                    "markMethod": "FairPrice",
+                    "markPrice": 10069.5,
+                    "indicativeTaxRate": 0,
+                    "indicativeSettlePrice": 10082.15,
+                    "settledPrice": null,
+                    "timestamp": "2018-01-31T07:35:05.634Z"
+                }
+            ],
+            "filter": {
+                "symbol": "XBTUSD"
+            }
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10063,
+                    "lastPriceProtected": 10063,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0818,
+                    "timestamp": "2018-01-31T07:35:07.436Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10061,
+                    "lastPriceProtected": 10061,
+                    "lastTickDirection": "ZeroMinusTick",
+                    "lastChangePcnt": -0.082,
+                    "timestamp": "2018-01-31T07:35:08.248Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10065,
+                    "lastPriceProtected": 10065,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0817,
+                    "timestamp": "2018-01-31T07:35:08.361Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10061,
+                    "lastPriceProtected": 10061,
+                    "lastTickDirection": "ZeroMinusTick",
+                    "lastChangePcnt": -0.082,
+                    "timestamp": "2018-01-31T07:35:08.826Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10065,
+                    "lastPriceProtected": 10065,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0817,
+                    "timestamp": "2018-01-31T07:35:08.914Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176814219987,
+                    "volume": 69510643,
+                    "totalTurnover": 2707620458800865,
+                    "turnover": 694679720544,
+                    "openInterest": 237413229,
+                    "openValue": 2357750777199,
+                    "timestamp": "2018-01-31T07:35:08.914Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10061.5,
+                    "midPrice": 10063.25,
+                    "askPrice": 10065,
+                    "impactBidPrice": 10060.3622,
+                    "impactMidPrice": 10065.5,
+                    "impactAskPrice": 10070.4935,
+                    "timestamp": "2018-01-31T07:35:08.914Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:35:09.501Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10062.5,
+                    "lastPriceProtected": 10062.5,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0819,
+                    "timestamp": "2018-01-31T07:35:09.826Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:35:10.013Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10068,
+                    "lastPriceProtected": 10068,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0814,
+                    "timestamp": "2018-01-31T07:35:10.209Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10070,
+                    "lastPriceProtected": 10070,
+                    "lastChangePcnt": -0.0812,
+                    "timestamp": "2018-01-31T07:35:10.664Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10068,
+                    "lastPriceProtected": 10068,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0814,
+                    "timestamp": "2018-01-31T07:35:10.807Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10082.14,
+                    "timestamp": "2018-01-31T07:35:10.807Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "fairPrice": 10069.49,
+                    "markPrice": 10069.49,
+                    "timestamp": "2018-01-31T07:35:10.807Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:35:11.726Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10072.5,
+                    "lastPriceProtected": 10070.4935,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.081,
+                    "timestamp": "2018-01-31T07:35:12.357Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075,
+                    "lastChangePcnt": -0.0807,
+                    "timestamp": "2018-01-31T07:35:12.457Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10068,
+                    "lastPriceProtected": 10068,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0814,
+                    "timestamp": "2018-01-31T07:35:12.602Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:35:12.739Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075,
+                    "lastPriceProtected": 10070.4935,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0807,
+                    "timestamp": "2018-01-31T07:35:12.911Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:35:13.082Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10068,
+                    "lastPriceProtected": 10068,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0814,
+                    "timestamp": "2018-01-31T07:35:13.416Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:35:13.825Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176814270492,
+                    "volume": 69561148,
+                    "totalTurnover": 2707620960362406,
+                    "turnover": 695181282085,
+                    "openInterest": 237419474,
+                    "openValue": 2357812796294,
+                    "timestamp": "2018-01-31T07:35:13.825Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10068,
+                    "midPrice": 10068.25,
+                    "askPrice": 10068.5,
+                    "impactBidPrice": 10064.4122,
+                    "impactMidPrice": 10069.5,
+                    "impactAskPrice": 10074.5517,
+                    "timestamp": "2018-01-31T07:35:13.825Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10073,
+                    "lastPriceProtected": 10073,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0809,
+                    "timestamp": "2018-01-31T07:35:14.553Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075,
+                    "lastPriceProtected": 10074.5517,
+                    "lastChangePcnt": -0.0807,
+                    "timestamp": "2018-01-31T07:35:14.660Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:35:15.527Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10069.5,
+                    "lastPriceProtected": 10069.5,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0813,
+                    "timestamp": "2018-01-31T07:35:15.609Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10082.1,
+                    "timestamp": "2018-01-31T07:35:15.609Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "fairPrice": 10069.45,
+                    "markPrice": 10069.45,
+                    "timestamp": "2018-01-31T07:35:15.609Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075,
+                    "lastPriceProtected": 10074.5517,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0807,
+                    "timestamp": "2018-01-31T07:35:16.744Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:35:17.045Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "PlusTick",
+                    "timestamp": "2018-01-31T07:35:17.544Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10074.5,
+                    "lastPriceProtected": 10074.5,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0808,
+                    "timestamp": "2018-01-31T07:35:18.108Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:35:18.340Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075,
+                    "lastPriceProtected": 10074.5517,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0807,
+                    "timestamp": "2018-01-31T07:35:18.594Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176814342692,
+                    "volume": 69633348,
+                    "totalTurnover": 2707621677072092,
+                    "turnover": 695897991771,
+                    "openInterest": 237408437,
+                    "openValue": 2357703187847,
+                    "timestamp": "2018-01-31T07:35:18.594Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPriceProtected": 10075,
+                    "bidPrice": 10073.5,
+                    "midPrice": 10074.25,
+                    "askPrice": 10075,
+                    "impactBidPrice": 10067.4519,
+                    "impactMidPrice": 10071.5,
+                    "impactAskPrice": 10075.5668,
+                    "timestamp": "2018-01-31T07:35:18.594Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10072,
+                    "lastPriceProtected": 10072,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.081,
+                    "timestamp": "2018-01-31T07:35:19.360Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10074.5,
+                    "lastPriceProtected": 10074.5,
+                    "lastTickDirection": "ZeroPlusTick",
+                    "lastChangePcnt": -0.0808,
+                    "timestamp": "2018-01-31T07:35:20.045Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10087.24,
+                    "timestamp": "2018-01-31T07:35:20.045Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2356516145662,
+                    "fairBasis": -12.66,
+                    "fairPrice": 10074.58,
+                    "markPrice": 10074.58,
+                    "timestamp": "2018-01-31T07:35:20.045Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075,
+                    "lastPriceProtected": 10075,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0807,
+                    "timestamp": "2018-01-31T07:35:21.632Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:35:21.712Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176814357719,
+                    "volume": 69648375,
+                    "totalTurnover": 2707621826230794,
+                    "turnover": 696047150473,
+                    "openInterest": 237407837,
+                    "openValue": 2356510190062,
+                    "timestamp": "2018-01-31T07:35:23.644Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10074.5,
+                    "midPrice": 10074.75,
+                    "impactBidPrice": 10071.5077,
+                    "impactMidPrice": 10073.5,
+                    "timestamp": "2018-01-31T07:35:23.644Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10071,
+                    "lastPriceProtected": 10071.5077,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0811,
+                    "timestamp": "2018-01-31T07:35:24.519Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10070,
+                    "lastChangePcnt": -0.0812,
+                    "timestamp": "2018-01-31T07:35:24.747Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10069.5,
+                    "lastChangePcnt": -0.0813,
+                    "timestamp": "2018-01-31T07:35:25.335Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10070,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0812,
+                    "timestamp": "2018-01-31T07:35:26.239Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:35:26.617Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176814491895,
+                    "volume": 69782551,
+                    "totalTurnover": 2707623158413432,
+                    "turnover": 697379333111,
+                    "openInterest": 237457139,
+                    "openValue": 2356999561714,
+                    "timestamp": "2018-01-31T07:35:28.760Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPriceProtected": 10070,
+                    "bidPrice": 10069.5,
+                    "midPrice": 10069.75,
+                    "askPrice": 10070,
+                    "impactBidPrice": 10065.4253,
+                    "impactMidPrice": 10070.5,
+                    "timestamp": "2018-01-31T07:35:28.760Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10069.5,
+                    "lastPriceProtected": 10069.5,
+                    "lastTickDirection": "ZeroMinusTick",
+                    "lastChangePcnt": -0.0813,
+                    "timestamp": "2018-01-31T07:35:29.665Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeFundingRate": -0.000955,
+                    "timestamp": "2018-01-31T07:35:29.665Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "prevPrice24h": 10951,
+                    "lastChangePcnt": -0.0805,
+                    "timestamp": "2018-01-31T07:35:29.665Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "volume24h": 1756869386,
+                    "turnover24h": 17321630480586,
+                    "timestamp": "2018-01-31T07:35:29.665Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10070,
+                    "lastPriceProtected": 10070,
+                    "lastTickDirection": "ZeroPlusTick",
+                    "lastChangePcnt": -0.0804,
+                    "timestamp": "2018-01-31T07:35:31.039Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10077.67,
+                    "timestamp": "2018-01-31T07:35:31.039Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2359136675965,
+                    "fairBasis": -12.65,
+                    "fairPrice": 10065.02,
+                    "markPrice": 10065.02,
+                    "timestamp": "2018-01-31T07:35:31.039Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10060.5,
+                    "lastPriceProtected": 10065.4253,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0813,
+                    "timestamp": "2018-01-31T07:35:32.155Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10071.5,
+                    "lastPriceProtected": 10071.5,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0803,
+                    "timestamp": "2018-01-31T07:35:32.359Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176814794520,
+                    "volume": 70085176,
+                    "totalTurnover": 2707626165804415,
+                    "turnover": 700386724094,
+                    "openInterest": 237483571,
+                    "openValue": 2359399277885,
+                    "timestamp": "2018-01-31T07:35:32.359Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "impactBidPrice": 10063.3994,
+                    "impactMidPrice": 10069.5,
+                    "timestamp": "2018-01-31T07:35:32.359Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10086.63,
+                    "timestamp": "2018-01-31T07:35:35.000Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2357499409317,
+                    "fairBasis": -12.66,
+                    "fairPrice": 10073.97,
+                    "markPrice": 10073.97,
+                    "timestamp": "2018-01-31T07:35:35.000Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10070,
+                    "lastPriceProtected": 10070,
+                    "lastTickDirection": "ZeroMinusTick",
+                    "lastChangePcnt": -0.0804,
+                    "timestamp": "2018-01-31T07:35:37.546Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10069.5,
+                    "lastPriceProtected": 10069.5,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0805,
+                    "timestamp": "2018-01-31T07:35:38.322Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:35:39.019Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176814806820,
+                    "volume": 70097476,
+                    "totalTurnover": 2707626287955315,
+                    "turnover": 700508874994,
+                    "openInterest": 237493191,
+                    "openValue": 2357594907057,
+                    "timestamp": "2018-01-31T07:35:39.019Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "impactBidPrice": 10062.3868,
+                    "impactMidPrice": 10067.5,
+                    "impactAskPrice": 10072.5222,
+                    "timestamp": "2018-01-31T07:35:39.019Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10070,
+                    "lastPriceProtected": 10070,
+                    "lastTickDirection": "ZeroPlusTick",
+                    "lastChangePcnt": -0.0804,
+                    "timestamp": "2018-01-31T07:35:40.047Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10069.5,
+                    "lastPriceProtected": 10069.5,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0805,
+                    "timestamp": "2018-01-31T07:35:40.805Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:35:40.865Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10076.33,
+                    "timestamp": "2018-01-31T07:35:40.865Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2359969838967,
+                    "fairBasis": -12.64,
+                    "fairPrice": 10063.69,
+                    "markPrice": 10063.69,
+                    "timestamp": "2018-01-31T07:35:40.865Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176814841233,
+                    "volume": 70131889,
+                    "totalTurnover": 2707626629689818,
+                    "turnover": 700850609497,
+                    "openInterest": 237507636,
+                    "openValue": 2360113378932,
+                    "timestamp": "2018-01-31T07:35:42.858Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "impactBidPrice": 10061.3744,
+                    "impactMidPrice": 10068,
+                    "impactAskPrice": 10074.5517,
+                    "timestamp": "2018-01-31T07:35:42.858Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10070,
+                    "lastPriceProtected": 10070,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0804,
+                    "timestamp": "2018-01-31T07:35:45.766Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10082.14,
+                    "timestamp": "2018-01-31T07:35:45.766Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2358688333116,
+                    "fairBasis": -12.65,
+                    "fairPrice": 10069.49,
+                    "markPrice": 10069.49,
+                    "timestamp": "2018-01-31T07:35:45.766Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10067,
+                    "lastPriceProtected": 10067,
+                    "lastTickDirection": "ZeroMinusTick",
+                    "lastChangePcnt": -0.0807,
+                    "timestamp": "2018-01-31T07:35:47.744Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176814846333,
+                    "volume": 70136989,
+                    "totalTurnover": 2707626680346878,
+                    "turnover": 700901266557,
+                    "openInterest": 237506911,
+                    "openValue": 2358681133141,
+                    "timestamp": "2018-01-31T07:35:47.964Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10066.5,
+                    "midPrice": 10066.75,
+                    "askPrice": 10067,
+                    "impactBidPrice": 10062.3868,
+                    "impactMidPrice": 10068.5,
+                    "timestamp": "2018-01-31T07:35:47.964Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10069,
+                    "lastPriceProtected": 10069,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0805,
+                    "timestamp": "2018-01-31T07:35:50.410Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10082.15,
+                    "timestamp": "2018-01-31T07:35:50.410Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "fairPrice": 10069.5,
+                    "markPrice": 10069.5,
+                    "timestamp": "2018-01-31T07:35:50.410Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10070.5,
+                    "lastPriceProtected": 10070.5,
+                    "lastChangePcnt": -0.0804,
+                    "timestamp": "2018-01-31T07:35:51.850Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10071,
+                    "lastPriceProtected": 10071,
+                    "timestamp": "2018-01-31T07:35:52.142Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176814856648,
+                    "volume": 70147304,
+                    "totalTurnover": 2707626782774898,
+                    "turnover": 701003694577,
+                    "openInterest": 237517226,
+                    "openValue": 2358783571406,
+                    "timestamp": "2018-01-31T07:35:52.142Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10072,
+                    "midPrice": 10072.25,
+                    "askPrice": 10072.5,
+                    "impactBidPrice": 10063.3994,
+                    "impactMidPrice": 10069.5,
+                    "impactAskPrice": 10075.5668,
+                    "timestamp": "2018-01-31T07:35:52.142Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10072.5,
+                    "lastPriceProtected": 10072.5,
+                    "lastTickDirection": "ZeroPlusTick",
+                    "lastChangePcnt": -0.0802,
+                    "timestamp": "2018-01-31T07:35:54.335Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10086.4,
+                    "timestamp": "2018-01-31T07:35:55.519Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2357833502502,
+                    "fairBasis": -12.66,
+                    "fairPrice": 10073.74,
+                    "markPrice": 10073.74,
+                    "timestamp": "2018-01-31T07:35:55.519Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10072,
+                    "lastPriceProtected": 10072,
+                    "lastTickDirection": "ZeroMinusTick",
+                    "lastChangePcnt": -0.0803,
+                    "timestamp": "2018-01-31T07:35:56.920Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10072.5,
+                    "lastPriceProtected": 10072.5,
+                    "lastTickDirection": "ZeroPlusTick",
+                    "lastChangePcnt": -0.0802,
+                    "timestamp": "2018-01-31T07:35:57.512Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10072,
+                    "lastPriceProtected": 10072,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0803,
+                    "timestamp": "2018-01-31T07:35:58.866Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176814860877,
+                    "volume": 70151533,
+                    "totalTurnover": 2707626824761635,
+                    "turnover": 701045681314,
+                    "openInterest": 237519490,
+                    "openValue": 2357855977230,
+                    "timestamp": "2018-01-31T07:35:58.866Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "impactBidPrice": 10064.4122,
+                    "impactAskPrice": 10074.5517,
+                    "timestamp": "2018-01-31T07:35:58.866Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10072.5,
+                    "lastPriceProtected": 10072.5,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0802,
+                    "timestamp": "2018-01-31T07:35:59.266Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:35:59.934Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "fairBasis": -12.61,
+                    "fairPrice": 10073.79,
+                    "markPrice": 10073.79,
+                    "timestamp": "2018-01-31T07:35:59.934Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "prevPrice24h": 10943.5,
+                    "lastChangePcnt": -0.0796,
+                    "timestamp": "2018-01-31T07:35:59.934Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "volume24h": 1757042420,
+                    "turnover24h": 17323506780918,
+                    "timestamp": "2018-01-31T07:35:59.934Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176814861688,
+                    "volume": 70152344,
+                    "totalTurnover": 2707626832813243,
+                    "turnover": 701053732922,
+                    "openInterest": 237520301,
+                    "openValue": 2357864028027,
+                    "timestamp": "2018-01-31T07:36:02.199Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "impactBidPrice": 10062.3868,
+                    "impactMidPrice": 10068,
+                    "impactAskPrice": 10073.5368,
+                    "timestamp": "2018-01-31T07:36:02.199Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10072,
+                    "lastPriceProtected": 10072,
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:36:04.322Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10071.5,
+                    "lastPriceProtected": 10071.5,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0797,
+                    "timestamp": "2018-01-31T07:36:04.831Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10082.14,
+                    "timestamp": "2018-01-31T07:36:05.000Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2358814109231,
+                    "fairBasis": -12.6,
+                    "fairPrice": 10069.54,
+                    "markPrice": 10069.54,
+                    "timestamp": "2018-01-31T07:36:05.000Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10070.5,
+                    "lastPriceProtected": 10070.5,
+                    "lastTickDirection": "ZeroMinusTick",
+                    "lastChangePcnt": -0.0798,
+                    "timestamp": "2018-01-31T07:36:06.846Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10070,
+                    "lastPriceProtected": 10070,
+                    "lastTickDirection": "MinusTick",
+                    "timestamp": "2018-01-31T07:36:07.224Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10069.5,
+                    "lastPriceProtected": 10069.5,
+                    "lastChangePcnt": -0.0799,
+                    "timestamp": "2018-01-31T07:36:07.333Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10070,
+                    "lastPriceProtected": 10070,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0798,
+                    "timestamp": "2018-01-31T07:36:07.807Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075,
+                    "lastPriceProtected": 10073.5368,
+                    "lastTickDirection": "ZeroPlusTick",
+                    "lastChangePcnt": -0.0794,
+                    "timestamp": "2018-01-31T07:36:08.550Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815000943,
+                    "volume": 70291599,
+                    "totalTurnover": 2707628215491883,
+                    "turnover": 702436411562,
+                    "openInterest": 237460172,
+                    "openValue": 2358216968132,
+                    "timestamp": "2018-01-31T07:36:08.550Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPriceProtected": 10075,
+                    "bidPrice": 10069.5,
+                    "midPrice": 10069.75,
+                    "askPrice": 10070,
+                    "impactBidPrice": 10068.4656,
+                    "impactMidPrice": 10072,
+                    "impactAskPrice": 10075.5668,
+                    "timestamp": "2018-01-31T07:36:08.550Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "PlusTick",
+                    "timestamp": "2018-01-31T07:36:09.257Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10070,
+                    "lastPriceProtected": 10070,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0798,
+                    "timestamp": "2018-01-31T07:36:10.717Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:36:11.328Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10069.5,
+                    "lastPriceProtected": 10069.5,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0799,
+                    "timestamp": "2018-01-31T07:36:11.445Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10074,
+                    "lastPriceProtected": 10074,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0795,
+                    "timestamp": "2018-01-31T07:36:12.029Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10069.5,
+                    "lastPriceProtected": 10069.5,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0799,
+                    "timestamp": "2018-01-31T07:36:12.327Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815006960,
+                    "volume": 70297616,
+                    "totalTurnover": 2707628275232114,
+                    "turnover": 702496151793,
+                    "openInterest": 237463454,
+                    "openValue": 2358249561674,
+                    "timestamp": "2018-01-31T07:36:12.327Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10073.5,
+                    "midPrice": 10073.75,
+                    "askPrice": 10074,
+                    "impactBidPrice": 10073.5368,
+                    "impactMidPrice": 10074.5,
+                    "timestamp": "2018-01-31T07:36:12.327Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10074,
+                    "lastPriceProtected": 10074,
+                    "lastTickDirection": "ZeroPlusTick",
+                    "lastChangePcnt": -0.0795,
+                    "timestamp": "2018-01-31T07:36:14.329Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075,
+                    "lastPriceProtected": 10075,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0794,
+                    "timestamp": "2018-01-31T07:36:14.430Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:36:14.901Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "PlusTick",
+                    "timestamp": "2018-01-31T07:36:15.035Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:36:15.417Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075.5,
+                    "lastPriceProtected": 10075.5,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0793,
+                    "timestamp": "2018-01-31T07:36:15.761Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10087.24,
+                    "timestamp": "2018-01-31T07:36:15.761Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2357062244404,
+                    "fairBasis": -12.61,
+                    "fairPrice": 10074.63,
+                    "markPrice": 10074.63,
+                    "timestamp": "2018-01-31T07:36:15.761Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075,
+                    "lastPriceProtected": 10075,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0794,
+                    "timestamp": "2018-01-31T07:36:16.930Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10074.5,
+                    "lastPriceProtected": 10074.5,
+                    "timestamp": "2018-01-31T07:36:17.003Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075,
+                    "lastPriceProtected": 10075,
+                    "lastTickDirection": "PlusTick",
+                    "timestamp": "2018-01-31T07:36:17.513Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:36:17.758Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075.5,
+                    "lastPriceProtected": 10075.5,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0793,
+                    "timestamp": "2018-01-31T07:36:18.635Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815122335,
+                    "volume": 70412991,
+                    "totalTurnover": 2707629420427419,
+                    "turnover": 703641347098,
+                    "openInterest": 237537286,
+                    "openValue": 2357795100836,
+                    "timestamp": "2018-01-31T07:36:18.635Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:36:19.120Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10075,
+                    "midPrice": 10075.25,
+                    "askPrice": 10075.5,
+                    "impactBidPrice": 10074.5517,
+                    "impactMidPrice": 10075,
+                    "timestamp": "2018-01-31T07:36:19.120Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075,
+                    "lastPriceProtected": 10075,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0794,
+                    "timestamp": "2018-01-31T07:36:22.688Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10075.5,
+                    "lastPriceProtected": 10075.5,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0793,
+                    "timestamp": "2018-01-31T07:36:22.823Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815189573,
+                    "volume": 70480229,
+                    "totalTurnover": 2707630087764669,
+                    "turnover": 704308684348,
+                    "openInterest": 237595328,
+                    "openValue": 2358371225728,
+                    "timestamp": "2018-01-31T07:36:22.823Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10077.5,
+                    "midPrice": 10077.75,
+                    "askPrice": 10078,
+                    "impactBidPrice": 10077.5975,
+                    "impactMidPrice": 10081.75,
+                    "impactAskPrice": 10085.7287,
+                    "timestamp": "2018-01-31T07:36:22.823Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10078,
+                    "lastPriceProtected": 10078,
+                    "lastChangePcnt": -0.0791,
+                    "timestamp": "2018-01-31T07:36:24.544Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:36:24.755Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10080,
+                    "lastPriceProtected": 10080,
+                    "lastChangePcnt": -0.0789,
+                    "timestamp": "2018-01-31T07:36:26.143Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10081.5,
+                    "lastPriceProtected": 10081.5,
+                    "lastChangePcnt": -0.0788,
+                    "timestamp": "2018-01-31T07:36:28.041Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10079.5,
+                    "lastPriceProtected": 10079.5,
+                    "lastTickDirection": "ZeroMinusTick",
+                    "lastChangePcnt": -0.079,
+                    "timestamp": "2018-01-31T07:36:28.321Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10081.5,
+                    "lastPriceProtected": 10081.5,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0788,
+                    "timestamp": "2018-01-31T07:36:28.831Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815205307,
+                    "volume": 70495963,
+                    "totalTurnover": 2707630243870989,
+                    "turnover": 704464790668,
+                    "openInterest": 237598173,
+                    "openValue": 2358399465198,
+                    "timestamp": "2018-01-31T07:36:28.831Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10081,
+                    "midPrice": 10081.25,
+                    "askPrice": 10081.5,
+                    "impactBidPrice": 10080.6452,
+                    "impactMidPrice": 10083.75,
+                    "impactAskPrice": 10086.746,
+                    "timestamp": "2018-01-31T07:36:28.831Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10082.5,
+                    "lastPriceProtected": 10082.5,
+                    "lastTickDirection": "ZeroPlusTick",
+                    "lastChangePcnt": -0.0787,
+                    "timestamp": "2018-01-31T07:36:29.490Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeFundingRate": -0.000958,
+                    "timestamp": "2018-01-31T07:36:29.490Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "prevPrice24h": 10936,
+                    "lastChangePcnt": -0.078,
+                    "timestamp": "2018-01-31T07:36:29.490Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "volume24h": 1757220385,
+                    "turnover24h": 17325410540902,
+                    "timestamp": "2018-01-31T07:36:29.490Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10082,
+                    "lastPriceProtected": 10082,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0781,
+                    "timestamp": "2018-01-31T07:36:30.815Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10081.25,
+                    "timestamp": "2018-01-31T07:36:30.815Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2359825054236,
+                    "fairBasis": -12.6,
+                    "fairPrice": 10068.65,
+                    "markPrice": 10068.65,
+                    "timestamp": "2018-01-31T07:36:30.815Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:36:31.912Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10081.5,
+                    "lastPriceProtected": 10081.5,
+                    "lastTickDirection": "MinusTick",
+                    "timestamp": "2018-01-31T07:36:32.022Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10083,
+                    "lastPriceProtected": 10083,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.078,
+                    "timestamp": "2018-01-31T07:36:32.433Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10084,
+                    "lastPriceProtected": 10084,
+                    "lastChangePcnt": -0.0779,
+                    "timestamp": "2018-01-31T07:36:32.846Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10085,
+                    "lastPriceProtected": 10085,
+                    "lastChangePcnt": -0.0778,
+                    "timestamp": "2018-01-31T07:36:33.258Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815218939,
+                    "volume": 70509595,
+                    "totalTurnover": 2707630379074040,
+                    "turnover": 704599993719,
+                    "openInterest": 237601785,
+                    "openValue": 2359860928620,
+                    "timestamp": "2018-01-31T07:36:33.258Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10081.5,
+                    "midPrice": 10082.25,
+                    "askPrice": 10083,
+                    "impactBidPrice": 10081.6615,
+                    "impactMidPrice": 10085.25,
+                    "impactAskPrice": 10088.7813,
+                    "timestamp": "2018-01-31T07:36:33.258Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10081,
+                    "lastPriceProtected": 10081.6615,
+                    "lastTickDirection": "ZeroMinusTick",
+                    "lastChangePcnt": -0.0782,
+                    "timestamp": "2018-01-31T07:36:34.847Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10083.5,
+                    "lastPriceProtected": 10083.5,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.078,
+                    "timestamp": "2018-01-31T07:36:35.266Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10079.5,
+                    "lastPriceProtected": 10081.6615,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0783,
+                    "timestamp": "2018-01-31T07:36:37.445Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815366353,
+                    "volume": 70657009,
+                    "totalTurnover": 2707631841175235,
+                    "turnover": 706062094914,
+                    "openInterest": 237624417,
+                    "openValue": 2360085709644,
+                    "timestamp": "2018-01-31T07:36:37.445Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPriceProtected": 10079.5,
+                    "bidPrice": 10078,
+                    "midPrice": 10078.25,
+                    "askPrice": 10078.5,
+                    "impactBidPrice": 10072.5222,
+                    "impactMidPrice": 10077.5,
+                    "impactAskPrice": 10082.678,
+                    "timestamp": "2018-01-31T07:36:37.445Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10078.5,
+                    "lastPriceProtected": 10078.5,
+                    "lastChangePcnt": -0.0784,
+                    "timestamp": "2018-01-31T07:36:39.352Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:36:40.513Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10078,
+                    "lastPriceProtected": 10078,
+                    "lastChangePcnt": -0.0785,
+                    "timestamp": "2018-01-31T07:36:41.528Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10078.5,
+                    "lastPriceProtected": 10078.5,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0784,
+                    "timestamp": "2018-01-31T07:36:41.623Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10078,
+                    "lastPriceProtected": 10078,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0785,
+                    "timestamp": "2018-01-31T07:36:42.890Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815381045,
+                    "volume": 70671701,
+                    "totalTurnover": 2707631986962751,
+                    "turnover": 706207882430,
+                    "openInterest": 237618006,
+                    "openValue": 2360022035592,
+                    "timestamp": "2018-01-31T07:36:42.890Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "impactBidPrice": 10073.5368,
+                    "impactMidPrice": 10079.75,
+                    "impactAskPrice": 10085.7287,
+                    "timestamp": "2018-01-31T07:36:42.890Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:36:46.438Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10078.5,
+                    "lastPriceProtected": 10078.5,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0784,
+                    "timestamp": "2018-01-31T07:36:47.173Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10081,
+                    "lastPriceProtected": 10081,
+                    "lastChangePcnt": -0.0782,
+                    "timestamp": "2018-01-31T07:36:48.430Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815397428,
+                    "volume": 70688084,
+                    "totalTurnover": 2707632149510947,
+                    "turnover": 706370430626,
+                    "openInterest": 237620089,
+                    "openValue": 2360042723948,
+                    "timestamp": "2018-01-31T07:36:48.430Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10082,
+                    "midPrice": 10082.25,
+                    "askPrice": 10082.5,
+                    "impactBidPrice": 10078.6132,
+                    "impactMidPrice": 10083.25,
+                    "impactAskPrice": 10087.7635,
+                    "timestamp": "2018-01-31T07:36:48.430Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10082,
+                    "lastPriceProtected": 10082,
+                    "lastChangePcnt": -0.0781,
+                    "timestamp": "2018-01-31T07:36:50.495Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10081.26,
+                    "timestamp": "2018-01-31T07:36:50.495Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "fairPrice": 10068.66,
+                    "markPrice": 10068.66,
+                    "timestamp": "2018-01-31T07:36:50.495Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:36:51.967Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10082.5,
+                    "lastPriceProtected": 10082.5,
+                    "lastChangePcnt": -0.078,
+                    "timestamp": "2018-01-31T07:36:52.112Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10082,
+                    "lastPriceProtected": 10082,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0781,
+                    "timestamp": "2018-01-31T07:36:52.824Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:36:53.519Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815402190,
+                    "volume": 70692846,
+                    "totalTurnover": 2707632196742665,
+                    "turnover": 706417662344,
+                    "openInterest": 237622750,
+                    "openValue": 2360069153000,
+                    "timestamp": "2018-01-31T07:36:53.519Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "impactBidPrice": 10079.6291,
+                    "impactMidPrice": 10083.75,
+                    "timestamp": "2018-01-31T07:36:53.519Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10082.5,
+                    "lastPriceProtected": 10082.5,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.078,
+                    "timestamp": "2018-01-31T07:36:55.913Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10076.48,
+                    "timestamp": "2018-01-31T07:36:55.913Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2361257266750,
+                    "fairPrice": 10063.88,
+                    "markPrice": 10063.88,
+                    "timestamp": "2018-01-31T07:36:55.913Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10085,
+                    "lastPriceProtected": 10085,
+                    "lastChangePcnt": -0.0778,
+                    "timestamp": "2018-01-31T07:36:57.828Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815429440,
+                    "volume": 70720096,
+                    "totalTurnover": 2707632466986023,
+                    "turnover": 706687905702,
+                    "openInterest": 237619404,
+                    "openValue": 2361224017548,
+                    "timestamp": "2018-01-31T07:36:57.828Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10084.5,
+                    "midPrice": 10084.75,
+                    "askPrice": 10085,
+                    "impactBidPrice": 10080.6452,
+                    "impactMidPrice": 10084.75,
+                    "impactAskPrice": 10088.7813,
+                    "timestamp": "2018-01-31T07:36:57.828Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:36:59.969Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2360986398144,
+                    "fairBasis": -12.55,
+                    "fairPrice": 10063.93,
+                    "markPrice": 10063.93,
+                    "timestamp": "2018-01-31T07:36:59.969Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "prevPrice24h": 10946,
+                    "lastChangePcnt": -0.0787,
+                    "timestamp": "2018-01-31T07:36:59.969Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "volume24h": 1757336577,
+                    "turnover24h": 17326640401940,
+                    "timestamp": "2018-01-31T07:36:59.969Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10084.5,
+                    "lastPriceProtected": 10084.5,
+                    "lastTickDirection": "MinusTick",
+                    "timestamp": "2018-01-31T07:37:01.607Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:37:02.702Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815485226,
+                    "volume": 70775882,
+                    "totalTurnover": 2707633020159999,
+                    "turnover": 707241079678,
+                    "openInterest": 237659005,
+                    "openValue": 2361379873680,
+                    "timestamp": "2018-01-31T07:37:03.622Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10078,
+                    "midPrice": 10080.5,
+                    "askPrice": 10083,
+                    "impactBidPrice": 10076.582,
+                    "impactMidPrice": 10080.25,
+                    "impactAskPrice": 10083.6947,
+                    "timestamp": "2018-01-31T07:37:03.622Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10079,
+                    "lastPriceProtected": 10079,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0792,
+                    "timestamp": "2018-01-31T07:37:05.732Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10078.5,
+                    "lastPriceProtected": 10078.5,
+                    "lastChangePcnt": -0.0793,
+                    "timestamp": "2018-01-31T07:37:05.834Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10081.21,
+                    "timestamp": "2018-01-31T07:37:05.834Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2360429237660,
+                    "fairBasis": -12.56,
+                    "fairPrice": 10068.65,
+                    "markPrice": 10068.65,
+                    "timestamp": "2018-01-31T07:37:05.834Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10079,
+                    "lastPriceProtected": 10079,
+                    "lastTickDirection": "ZeroPlusTick",
+                    "lastChangePcnt": -0.0792,
+                    "timestamp": "2018-01-31T07:37:07.313Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815487879,
+                    "volume": 70778535,
+                    "totalTurnover": 2707633046483065,
+                    "turnover": 707267402744,
+                    "openInterest": 237657208,
+                    "openValue": 2360411389856,
+                    "timestamp": "2018-01-31T07:37:07.722Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10078.5,
+                    "midPrice": 10078.75,
+                    "askPrice": 10079,
+                    "impactMidPrice": 10079.75,
+                    "impactAskPrice": 10082.678,
+                    "timestamp": "2018-01-31T07:37:07.722Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10076,
+                    "lastPriceProtected": 10076.582,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0795,
+                    "timestamp": "2018-01-31T07:37:10.203Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:37:10.364Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10077.34,
+                    "timestamp": "2018-01-31T07:37:10.927Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2361362018688,
+                    "fairBasis": -12.55,
+                    "fairPrice": 10064.79,
+                    "markPrice": 10064.79,
+                    "timestamp": "2018-01-31T07:37:10.927Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10076.5,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0794,
+                    "timestamp": "2018-01-31T07:37:13.137Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815543426,
+                    "volume": 70834082,
+                    "totalTurnover": 2707633597750622,
+                    "turnover": 707818670301,
+                    "openInterest": 237618540,
+                    "openValue": 2360977813440,
+                    "timestamp": "2018-01-31T07:37:13.137Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPriceProtected": 10076.5,
+                    "bidPrice": 10076,
+                    "midPrice": 10076.25,
+                    "askPrice": 10076.5,
+                    "impactBidPrice": 10072.5222,
+                    "impactMidPrice": 10077,
+                    "impactAskPrice": 10081.6615,
+                    "timestamp": "2018-01-31T07:37:13.137Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:37:14.759Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10076,
+                    "lastPriceProtected": 10076,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0795,
+                    "timestamp": "2018-01-31T07:37:15.710Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:37:16.627Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815562455,
+                    "volume": 70853111,
+                    "totalTurnover": 2707633786613438,
+                    "turnover": 708007533117,
+                    "openInterest": 237616551,
+                    "openValue": 2360958050736,
+                    "timestamp": "2018-01-31T07:37:18.231Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "impactBidPrice": 10075.5668,
+                    "impactMidPrice": 10077.5,
+                    "impactAskPrice": 10079.6291,
+                    "timestamp": "2018-01-31T07:37:18.231Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10076.5,
+                    "lastPriceProtected": 10076.5,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0794,
+                    "timestamp": "2018-01-31T07:37:21.528Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10076,
+                    "lastPriceProtected": 10076,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0795,
+                    "timestamp": "2018-01-31T07:37:22.657Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10076.5,
+                    "lastPriceProtected": 10076.5,
+                    "lastTickDirection": "PlusTick",
+                    "lastChangePcnt": -0.0794,
+                    "timestamp": "2018-01-31T07:37:23.018Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroPlusTick",
+                    "timestamp": "2018-01-31T07:37:23.597Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815573519,
+                    "volume": 70864175,
+                    "totalTurnover": 2707633896412874,
+                    "turnover": 708117332553,
+                    "timestamp": "2018-01-31T07:37:23.597Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "impactMidPrice": 10078.5,
+                    "impactAskPrice": 10081.6615,
+                    "timestamp": "2018-01-31T07:37:23.597Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10076,
+                    "lastPriceProtected": 10076,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0795,
+                    "timestamp": "2018-01-31T07:37:25.843Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10078,
+                    "lastPriceProtected": 10078,
+                    "lastTickDirection": "ZeroPlusTick",
+                    "lastChangePcnt": -0.0793,
+                    "timestamp": "2018-01-31T07:37:27.414Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815617519,
+                    "volume": 70908175,
+                    "totalTurnover": 2707634333082362,
+                    "turnover": 708554002041,
+                    "openInterest": 237633547,
+                    "openValue": 2361126922992,
+                    "timestamp": "2018-01-31T07:37:27.414Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10078,
+                    "midPrice": 10078.25,
+                    "askPrice": 10078.5,
+                    "timestamp": "2018-01-31T07:37:27.414Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeFundingRate": -0.000954,
+                    "timestamp": "2018-01-31T07:37:27.414Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "prevPrice24h": 10953.5,
+                    "lastChangePcnt": -0.0799,
+                    "timestamp": "2018-01-31T07:37:27.414Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "volume24h": 1757485613,
+                    "turnover24h": 17328149236898,
+                    "timestamp": "2018-01-31T07:37:27.414Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastPrice": 10076,
+                    "lastPriceProtected": 10076,
+                    "lastTickDirection": "MinusTick",
+                    "lastChangePcnt": -0.0801,
+                    "timestamp": "2018-01-31T07:37:30.494Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10076.51,
+                    "timestamp": "2018-01-31T07:37:30.494Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "fairPrice": 10063.96,
+                    "markPrice": 10063.96,
+                    "timestamp": "2018-01-31T07:37:30.494Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815633106,
+                    "volume": 70923762,
+                    "totalTurnover": 2707634487761699,
+                    "turnover": 708708681378,
+                    "openInterest": 237628729,
+                    "openValue": 2361079051344,
+                    "timestamp": "2018-01-31T07:37:30.494Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "bidPrice": 10075.5,
+                    "midPrice": 10075.75,
+                    "askPrice": 10076,
+                    "impactBidPrice": 10071.5077,
+                    "impactMidPrice": 10076.5,
+                    "timestamp": "2018-01-31T07:37:30.494Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10076.49,
+                    "timestamp": "2018-01-31T07:37:35.000Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "fairPrice": 10063.94,
+                    "markPrice": 10063.94,
+                    "timestamp": "2018-01-31T07:37:35.000Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "lastTickDirection": "ZeroMinusTick",
+                    "timestamp": "2018-01-31T07:37:38.708Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "totalVolume": 176815633606,
+                    "volume": 70924262,
+                    "totalTurnover": 2707634492724199,
+                    "turnover": 708713643878,
+                    "timestamp": "2018-01-31T07:37:38.708Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "impactBidPrice": 10074.5517,
+                    "impactMidPrice": 10078,
+                    "timestamp": "2018-01-31T07:37:38.708Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "indicativeSettlePrice": 10076.34,
+                    "timestamp": "2018-01-31T07:37:40.000Z"
+                }
+            ]
+        },
+        {
+            "table": "instrument",
+            "action": "update",
+            "data": [
+                {
+                    "symbol": "XBTUSD",
+                    "openValue": 2361316680073,
+                    "fairPrice": 10063.79,
+                    "markPrice": 10063.79,
+                    "timestamp": "2018-01-31T07:37:40.000Z"
+                }
+            ]
+        }
+    ]
+}
